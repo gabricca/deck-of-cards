@@ -15,22 +15,22 @@ describe Card do
     end
 
     # Bonus, remove the 'x' in front of 'context' to activate
-    xcontext "when the first argument is greater than 13" do
+    context "when the first argument is greater than 13" do
       it 'raises an error' do
         expect { Card.new(15, 'hearts') }.to raise_error ArgumentError
       end
     end
-    xcontext "when the first argument is lower than 1" do
+    context "when the first argument is lower than 1" do
       it 'raises an error' do
         expect { Card.new(0, 'hearts') }.to raise_error ArgumentError
       end
     end
-    xcontext "when the first argument is not an integer" do
+    context "when the first argument is not an integer" do
       it 'raises an error' do
         expect { Card.new("not a number", 'hearts') }.to raise_error ArgumentError
       end
     end
-    xcontext "when the second argument is not a valid card suit" do
+    context "when the second argument is not a valid card suit" do
       it 'raises an error' do
         expect { Card.new(12, 'not a real suit') }.to raise_error ArgumentError
       end
