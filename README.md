@@ -12,8 +12,11 @@ The deck may be shuffled.
 ![deck-shuffle-spec](./Screenshots/2.png)
 A random card may also be drawn.
 ![deck-draw-spec](./Screenshots/3.png)
+
+Lastly, a play world was created that allows users to interact with all card and deck functions. 
 ## Installation
-This program was written using Ruby version 2.7.1p83
+This program was written using Ruby version 2.7.1p83.
+
 All that is needed is a terminal with Ruby installed. From the terminal, 
 ```bash
 git clone github.com/gabricca/deck-of-cards
